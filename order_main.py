@@ -59,8 +59,8 @@ if data is not None:
 #Choose only the forecasted records (having date after the latest date in #original data)
      orecast_filtered =  forecast[forecast['ds'] > max_date]    
      st.write(forecast_filtered)  #Display some forecasted records
-     st.write(“The next visual shows the actual (black dots) and predicted 
-      (blue line) values over time.”)    
+     st.write('''The next visual shows the actual (black dots) and predicted 
+      (blue line) values over time.''')    
       figure1 = obj.plot(fcst) #plot the actual and predicted values
       st.write(figure1)  #display the plot
  #Plot the trends using Prophet.plot_components()
